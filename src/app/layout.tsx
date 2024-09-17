@@ -1,24 +1,14 @@
 import type { Metadata } from "next";
-// import localFont from "next/font/local";
-import { Inter } from "next/font/google"
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
-
-
-const inter = Inter({ subsets: ['latin']})
+// Import the Inter font from Google Fonts
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Grahams Of Cheshire"
+  title: "Grahams Of Cheshire",
 };
 
 export default function RootLayout({
@@ -28,10 +18,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} bg-slate-600 text-slate-100 container   mx-auto p-4`}
-      >
-        {children}
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body className={`${inter.className} bg-[#231f20] text-[#EAEAEA]`}>
+
+        <div id="container" className="flex flex-col flex-grow">
+          <Header />
+          <main className="flex-grow">{children}</main> 
+          <Footer />
+        </div>
       </body>
     </html>
   );

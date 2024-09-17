@@ -24,3 +24,23 @@
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
+
+
+// the above was the original TS config and below is from Flowbite's website https://flowbite.com/docs/getting-started/typescript/
+
+
+// {
+//   "compilerOptions": {
+//       "lib": ["dom", "es2015"],
+//       "outDir": "./lib/cjs/",
+//       "sourceMap": true,
+//       "declaration": true,
+//       "noImplicitAny": true,
+//       "module": "commonjs",
+//       "target": "es5",
+//       "allowJs": true,
+//       "moduleResolution": "node"
+//   },
+//   "include": ["src/**/*.ts*"],
+//   "exclude": ["node_modules", "dist", "lib"]
+// }
