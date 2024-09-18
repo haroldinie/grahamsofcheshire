@@ -1,4 +1,15 @@
 import Image from "next/image"
+import image1 from "../../../public/logo/images/unnamed (2).jpg"
+import image2 from "../../../public/logo/images/unnamed (3).jpg"
+import image3 from "../../../public/logo/images/unnamed (4).jpg"
+import image5 from "../../../public/logo/images/unnamed (5).jpg"
+import image6 from "../../../public/logo/images/unnamed (6).jpg"
+import image7 from "../../../public/logo/images/unnamed (7).jpg"
+import image8 from "../../../public/logo/images/unnamed (8).jpg"
+import image9 from "../../../public/logo/images/unnamed (9).jpg"
+import image10 from "../../../public/logo/images/unnamed (10).jpg"
+import image11 from "../../../public/logo/images/unnamed (11).jpg"
+
 
 export default function Gallery() {
     return (
@@ -6,61 +17,58 @@ export default function Gallery() {
         <h1>Gallery</h1>
 
 
-
-        {/* below is the gallery component from flowbite need to have local images really unless set up more in the config files */}
-
         
-        {/* <div>
+        <div>
         
 
 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
     <div className="grid gap-4">
         <div>
-            <Image className="h-auto w-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" width={32} height={32} alt=""/>
+            <Image className="h-auto w-auto max-w-full rounded-lg" src={image1} alt=""/>
         </div>
         <div>
-            <Image className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src={image2} alt=""/>
         </div>
         <div>
-            <Image className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt=""/>
-        </div>
-    </div>
-    <div className="grid gap-4">
-        <div>
-            <Image className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt=""/>
-        </div>
-        <div>
-            <Image className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt=""/>
-        </div>
-        <div>
-            <Image className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src={image3} alt=""/>
         </div>
     </div>
     <div className="grid gap-4">
         <div>
-            <Image className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src={image5} alt=""/>
         </div>
         <div>
-            <Image className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src={image6} alt=""/>
         </div>
         <div>
-            <Image className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src={image7} alt=""/>
         </div>
     </div>
     <div className="grid gap-4">
         <div>
-            <Image className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src={image8} alt=""/>
         </div>
         <div>
+            <Image className="h-auto max-w-full rounded-lg" src={image9} alt=""/>
+        </div>
+        <div>
+            <Image className="h-auto max-w-full rounded-lg" src={image10} alt=""/>
+        </div>
+    </div>
+    <div className="grid gap-4">
+        <div>
+            <Image className="h-auto max-w-full rounded-lg" src={image11} alt=""/>
+        </div>
+        {/* <div>
             <Image className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt=""/>
         </div>
         <div>
             <Image className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt=""/>
-        </div>
+        </div> */}
     </div>
 </div>
 
-        </div> */}
+        </div>
         </>
     )
 }

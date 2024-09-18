@@ -1,0 +1,38 @@
+.backgroundImage {
+  background-image: url('../app/about/unnamed\ \(1\).jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+/* Center the container and content */
+.page-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center; /*Vertically centers the content */
+  min-height: 100vh; /*Ensure it takes up full viewport height */
+  position: relative;
+  padding: 4rem 1rem;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 4rem;
+  color: #EAEAEA;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: slight background to make text easier to read */
+  margin: 0 auto;
+  /* text-align: center; Center text alignment */
+  /* max-width: 800px; Optional: to control the width */
+}
+    /* transition-all duration-300 rounded-lg blur-sm hover:blur-none */
+
+  /* max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 text-[#EAEAEA] container */
