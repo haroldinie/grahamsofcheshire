@@ -1,17 +1,17 @@
-import grahamslogo from './IMG_2809.jpg'
+import grahamslogo from './transparent-logo.png'
 import Image from 'next/image'
 
 export default function Footer() {
     return(
-  <footer className="footer-center bg-primary text-primary-content pt-10 px-10 mb-5 mt-10 border-t-[10px] border-[#8E793E] rounded-full mt-20 mb-5 bg-[#231f20] text-[#EAEAEA]">
-    <aside>
-
+  <footer className="footer-center bg-primary text-primary-content pt-10 px-10 mb-5 mt-10 border-t-[5px] border-[#8E793E] mt-20 mb-5 bg-[#231f20] text-[#EAEAEA]">
+    <div className='flex column justify start'>
   <Image
       src={grahamslogo}
       alt="Grahams' logo"
-      width={32}
-      height={32}
-    />
+      width={120}
+      height={120}
+      />
+      <aside>
 
     <p className="font-bold">
       Graham's of Cheshire Ltd.
@@ -48,6 +48,7 @@ export default function Footer() {
       </a>
     </div>
   </nav>
+  </div>
 </footer>
     )
 }

@@ -1,19 +1,89 @@
-import Image from "next/image"
-
+import "../reviewsbackgroundimage.css";
 
 export default function Reviews() {
-    return (
-        <>
+  return (
+    <>
+      <div className="page-wrapper">
+        <div className="backgroundImage"> </div>
+        
+          <div className="flex justify-between flex-wrap p-4 gap-4">
+            {/* inserting container above makes a change */}
+            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                "Some of the best food in the world"
+              </h5>
+              <p className="font-normal">Helena - Head Chef at Rose & Crown.</p>
+            </div>
 
+            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                "Wherever Chef Adie goes, I go, I'll follow this man to the edge
+                of the world"
+              </h5>
+              <p className="font-normal">Nathan Rosenbaum - dear friend</p>
+            </div>
 
-<div className="grid mb-8 mt-8 border border-[#7B7B7C] rounded-lg shadow-sm dark:border-[#7B7B7C] md:mb-12 md:grid-cols-2">
-{/* if want to add a border around the outside just add "border" above */}
+            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                "This makes the food at Buckingham Palace look wank, fair play
+                Chef Adie"
+              </h5>
+              <p className="font-normal">
+                King Charles III - King of the British Aisles
+              </p>
+            </div>
 
-    <figure className="flex flex-col items-center justify-center p-8 text-center border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:border-[#7B7B7C]">
-        <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-[#EAEAEA]">
-            <h3 className="text-lg font-semibold text-[#EAEAEA] dark:text[#EAEAEA]">Very easy this was to integrate</h3>
-            <p className="my-4">If you care for your time, I hands down would go with this."</p>
-        </blockquote>
+            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                "This fucking food is fucking unbelievable, what's your beef
+                wellington recipe bro?"
+              </h5>
+              <p className="font-normal">Gordan Ramsay - Average chef in comparison</p>
+            </div>
+
+            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                "Chicken fried riii is gweat, likkle tip, add moooore MSG"
+              </h5>
+              <p className="font-normal">Uncle Roger - Celebrity Chef @ City Wok </p>
+            </div>
+
+            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                "Excellent food but I prefer my meat a little more... intimate"
+              </h5>
+              <p className="font-normal">Jeffrey Dahmer - Alternative Culinary Expert</p>
+            </div>
+
+            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                "Commited mass murder because I heard Chef Adie cooks the final meals on death row"
+              </h5>
+              <p className="font-normal">
+                Ted Bundy - Sophisticated psychopath 
+              </p>
+            </div>
+
+            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                "Never would've sacificed myself if Chef Adie cooked the Last Supper"
+              </h5>
+              <p className="font-normal">
+                Jesus Christ - Our Lord and Savior
+              </p>
+            </div>
+
+        </div>
+      </div>
+
+      {/* <div className="grid mb-8 mt-8 border border-[#7B7B7C] rounded-lg shadow-sm dark:border-[#7B7B7C] md:mb-12 md:grid-cols-2">
+if want to add a border around the outside just add "border" above
+
+<figure className="flex flex-col items-center justify-center p-8 text-center border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:border-[#7B7B7C]">
+<blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-[#EAEAEA]">
+<h3 className="text-lg font-semibold text-[#EAEAEA] dark:text[#EAEAEA]">Very easy this was to integrate</h3>
+<p className="my-4">If you care for your time, I hands down would go with this."</p>
+</blockquote>
         <figcaption className="flex items-center justify-center ">
             <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                 <div>Bonnie Green</div>
@@ -117,7 +187,7 @@ export default function Reviews() {
             </div>
         </figcaption>    
     </figure>
-</div>
-</>
-    )
+</div> */}
+    </>
+  );
 }

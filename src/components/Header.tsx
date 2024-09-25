@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Collapse } from 'flowbite';
 import type { CollapseOptions, CollapseInterface } from 'flowbite';
 import type { InstanceOptions } from 'flowbite';
-import grahamslogo from './IMG_2809.jpg'
+import grahamslogo from './transparent-logo.png'
 
 export default function Header() {
     return (
@@ -14,10 +14,10 @@ export default function Header() {
     <Image
       src={grahamslogo}
       alt="Grahams' logo"
-      width={32}
-      height={32}
+      width={120}
+      height={120}
     />
-    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white hidden sm:flex">
       Graham's of Cheshire
     </span>
   </a>
