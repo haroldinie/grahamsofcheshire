@@ -8,14 +8,14 @@ export default function Reviews() {
         
           <div className="flex justify-between flex-wrap p-4 gap-4">
             {/* inserting container above makes a change */}
-            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
               <h5 className="mb-2 text-2xl font-bold tracking-tight">
                 "Some of the best food in the world"
               </h5>
               <p className="font-normal">Helena - Head Chef at Rose & Crown.</p>
             </div>
 
-            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
               <h5 className="mb-2 text-2xl font-bold tracking-tight">
                 "Wherever Chef Adie goes, I go, I'll follow this man to the edge
                 of the world"
@@ -23,7 +23,7 @@ export default function Reviews() {
               <p className="font-normal">Nathan Rosenbaum - dear friend</p>
             </div>
 
-            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
               <h5 className="mb-2 text-2xl font-bold tracking-tight">
                 "This makes the food at Buckingham Palace look wank, fair play
                 Chef Adie"
@@ -33,7 +33,7 @@ export default function Reviews() {
               </p>
             </div>
 
-            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
               <h5 className="mb-2 text-2xl font-bold tracking-tight">
                 "This fucking food is fucking unbelievable, what's your beef
                 wellington recipe bro?"
@@ -41,21 +41,21 @@ export default function Reviews() {
               <p className="font-normal">Gordan Ramsay - Average chef in comparison</p>
             </div>
 
-            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
               <h5 className="mb-2 text-2xl font-bold tracking-tight">
                 "Chicken fried riii is gweat, likkle tip, add moooore MSG"
               </h5>
               <p className="font-normal">Uncle Roger - Celebrity Chef @ City Wok </p>
             </div>
 
-            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
               <h5 className="mb-2 text-2xl font-bold tracking-tight">
                 "Excellent food but I prefer my meat a little more... intimate"
               </h5>
               <p className="font-normal">Jeffrey Dahmer - Alternative Culinary Expert</p>
             </div>
 
-            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
               <h5 className="mb-2 text-2xl font-bold tracking-tight">
                 "Commited mass murder because I heard Chef Adie cooks the final meals on death row"
               </h5>
@@ -64,7 +64,7 @@ export default function Reviews() {
               </p>
             </div>
 
-            <div className="shade block max-w-sm p-6 border rounded-lg shadow border-[#7B7B7C]">
+            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
               <h5 className="mb-2 text-2xl font-bold tracking-tight">
                 "Never would've sacificed myself if Chef Adie cooked the Last Supper"
               </h5>

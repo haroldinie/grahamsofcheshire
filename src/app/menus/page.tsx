@@ -1,41 +1,32 @@
+"use client"
+// import { useState } from "react";
+
 export default function Menus() {
+
+// const [showPDF, setshowPDF] = useState(false)
+
     return (
       <>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 text-[#EAEAEA]">
-<p className="pb-8">Our range of menus are designed to suit all taste requirements, whilst offering a choice to suit all budgets. In our menus you will fine a large selection of options. We can caterer for any occasion whether it be a formal sit down menu, Table served BBQ and sharing style Tapas for a wedding breakfast with a difference. We can tailor our menus to your personal preferences so you can be sure you’re getting exactly what you and your guests desire.</p>
+<p className="pb-8">At Graham's of Cheshire, our curated menus are crafted to suit all occasions, from grand weddings to intimate private dining experiences. Each menu reflects our commitment to bespoke, high-end catering, ensuring that every dish is tailored to your tastes and preferences. Whether you're looking for a formal sit-down meal, an elegant sharing-style feast, or a unique taster menu, our culinary creations offer a refined, personalized touch to make your event truly unforgettable. Explore our menus and let us help you create an extraordinary dining experience..</p>
 
-<a href="https://olivetreecatering.co.uk/wp-content/uploads/Olive-Tree-Canapes-2024.pdf" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#8E793E] dark:border-gray-700 dark:hover:bg-[#AD974F]">
+<a href="/menus/wedding-breakfast-menu.pdf" target="_blank" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#8E793E] dark:border-gray-700 dark:hover:bg-[#AD974F]">
 
-<h5 className="mb-2 text-2xl font-bold tracking-tight text-[#EAEAEA]">Street Food Taster Menu</h5>
-<p className="font-normal text-[#EAEAEA]">From our latest guest chef appearance at Bell's of Peover</p>
+<h5 className="mb-2 text-2xl font-bold tracking-tight text-[#EAEAEA]">Wedding Breakfast Menu</h5>
+<p className="font-normal text-[#EAEAEA]">A sample of our wedding breakfast menu</p> 
 </a>
 
-  <a href="https://olivetreecatering.co.uk/wp-content/uploads/Olive-Tree-Canapes-2024.pdf" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#8E793E] dark:border-gray-700 dark:hover:bg-[#AD974F]">
+  <a href="/menus/private-dining-menu.pdf" target="_blank" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#8E793E] dark:border-gray-700 dark:hover:bg-[#AD974F]">
 
-  <h5 className="mb-2 text-2xl font-bold tracking-tight text-[#EAEAEA]">Fine Dining Taster Menu</h5>
-  <p className="font-normal text-[#EAEAEA]">From our latest guest chef appearance at Bell's of Peover</p>
+  <h5 className="mb-2 text-2xl font-bold tracking-tight text-[#EAEAEA]">Private Dining Menu</h5>
+  <p className="font-normal text-[#EAEAEA]">A sample of our private dining menu, please see gallery page for examples</p>
   </a>
 
+  <a href="/menus/canape-menu.pdf" target="_blank" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#8E793E] dark:border-gray-700 dark:hover:bg-[#AD974F]">
 
-
-<div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-[#8E793E] dark:border-gray-700 dark:hover:bg-[#AD974F]">
-    <a href="https://olivetreecatering.co.uk/wp-content/uploads/Olive-Tree-Canapes-2024.pdf">
-        <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-    </a>
-    <div className="p-5">
-        <a href="https://olivetreecatering.co.uk/wp-content/uploads/Olive-Tree-Canapes-2024.pdf">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Street Food Taster Menu</h5>
-        </a>
-        <p className="mb-3 font-normal text-[#EAEAEA]">From our latest guest chef appearance at Bell's of Peover</p>
-        <a href="https://olivetreecatering.co.uk/wp-content/uploads/Olive-Tree-Canapes-2024.pdf" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-             <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </a>
-    </div>
-</div>
-
+<h5 className="mb-2 text-2xl font-bold tracking-tight text-[#EAEAEA]">Canape Menu</h5>
+<p className="font-normal text-[#EAEAEA]">A sample of our canape menu, please see gallery for example </p>
+</a>
 
 </div>
 </>

@@ -17,8 +17,6 @@ export const SingleImageComponent : React.FC<SingleImageComponentProps> = ({src,
         setHovered(false);
     }
 
-    console.log({ hovered })
-
     return (
         <div className="relative h-auto w-auto flex justify-center content-center">
             {hovered && (

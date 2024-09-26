@@ -39,7 +39,7 @@ export default function Gallery() {
     return (
         <>
             <div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 px-4">
                     {images.map(({ src, id, overlayText }) => (
                         <SingleImageComponent
                             key={id}

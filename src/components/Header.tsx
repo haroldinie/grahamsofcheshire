@@ -8,7 +8,7 @@ import grahamslogo from './transparent-logo.png'
 export default function Header() {
     return (
 
-<nav className="border-b-[5px] border-[#8E793E] px-4 py-2 md:px-8 md:py-4">
+<nav className="border-b-[5px] border-[#8E793E] px-4 py-2 md:px-8 md:py-1">
 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
     <Image
