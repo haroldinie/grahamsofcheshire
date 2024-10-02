@@ -9,68 +9,51 @@ export default function Reviews() {
           <div className="flex justify-between flex-wrap p-4 gap-4">
             {/* inserting container above makes a change */}
             <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight">
-                "Some of the best food in the world"
+              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+                "Adie did a fantastic job catering for our parents' golden wedding anniversary dinner. Great communication beforehand, finessing the menu to our specifications and arrived with plenty of time and also plenty of amazing leftovers...including a sublime jus to go with the perfect beef wellingtons. Declared by all to be an amazing meal!"
               </h5>
-              <p className="font-normal">Helena - Head Chef at Rose & Crown.</p>
+            </div>
+            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
+              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+                "At last we have Adie back in the fold head chef at The Bells of Peover with his creatively executed delicious new menu. Friends and family were invited for a new menu tester night on Thursday, I had the tasty prawns and succulent lamb 😋 but don’t take my word for it get yourselves down there the food is just devine amazing presentation great ambiance."
+              </h5>
             </div>
 
             <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight">
-                "Wherever Chef Adie goes, I go, I'll follow this man to the edge
-                of the world"
+              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+                "Fantastic evening. Great customer service from the staff and even spoke with the chef who was very friendly. We shared the breads over drinks and then had the home made pies (both steak and ale, and cheese and onion) for mains, and they were absolutely stunning.  Great experience will be back."
               </h5>
-              <p className="font-normal">Nathan Rosenbaum - dear friend</p>
             </div>
 
             <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight">
-                "This makes the food at Buckingham Palace look wank, fair play
-                Chef Adie"
+              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+                "5 stars, the triumphant return of Chef Adrian Munt! We returned to The Bells this week with family, and we’re delighted with our experience. After a few months of The Bells not being up to its usual standard, our meal and experience on Thursday evening was brilliant."
               </h5>
-              <p className="font-normal">
-                King Charles III - King of the British Aisles
-              </p>
             </div>
 
             <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight">
-                "This fucking food is fucking unbelievable, what's your beef
-                wellington recipe bro?"
+              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+                "Came in a big group of friends and opted for the trio of meat. Head chef has nailed it. The absolute without doubt best plate of food I’ve ever eaten. Head chef is called Adie and came and chatted with us too. Can't describe the level of deservedness for recognition of food excellence. Desserts were also top tier"
               </h5>
-              <p className="font-normal">Gordan Ramsay - Average chef in comparison</p>
             </div>
 
             <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight">
-                "Chicken fried riii is gweat, likkle tip, add moooore MSG"
+              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+                "Had the trio roast and it was absolutely sensational. Best roast dinner I’ve ever had and I highly recommend getting the cauliflower cheese as well! Elite level cuisine."
               </h5>
-              <p className="font-normal">Uncle Roger - Celebrity Chef @ City Wok </p>
+            </div>
+
+
+            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
+              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+                "This really is a masterpiece by The Bells of Peover's talented head chef, Adie Munt. I am not usually a big fan of ordering pork when dining out, but this dish changed that for sure. Pork tenderloin, expertly paired with a rich and flavourful black pudding suet pudding and a pancetta jus on the side, is accompanied by a luscious whole grain mash that offers a comforting texture, and crisp and vibrant tender stem broccoli."
+              </h5>
             </div>
 
             <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight">
-                "Excellent food but I prefer my meat a little more... intimate"
+              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+                "What can I say, I've been a fan of Chef Adie's creations for a long time now and that's why I didn't think twice when it came to choosing who I'd like to cater for our wedding. The food speaks for itself and I cannot thank you enough for delivering on the quality, as you always do, but esecially on our wedding day!"
               </h5>
-              <p className="font-normal">Jeffrey Dahmer - Alternative Culinary Expert</p>
-            </div>
-
-            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight">
-                "Commited mass murder because I heard Chef Adie cooks the final meals on death row"
-              </h5>
-              <p className="font-normal">
-                Ted Bundy - Sophisticated psychopath 
-              </p>
-            </div>
-
-            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight">
-                "Never would've sacificed myself if Chef Adie cooked the Last Supper"
-              </h5>
-              <p className="font-normal">
-                Jesus Christ - Our Lord and Savior
-              </p>
             </div>
 
         </div>

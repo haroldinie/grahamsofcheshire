@@ -17,9 +17,9 @@ export default function Header() {
       width={120}
       height={120}
     />
-    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white hidden sm:flex">
+    <h2 className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white hidden sm:flex">
       Graham's of Cheshire
-    </span>
+    </h2>
   </a>
 
   {/* Toggling with a checkbox */}

@@ -2,6 +2,7 @@
     background-image: url('../../public/logo/images/adiebackground.jpg');
     background-size: cover;
     background-position: center;
+    background-position: center right;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
@@ -27,7 +28,7 @@
   }
 
   .shade {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(35, 31, 32, 0.8);
   }
   
   /* .container { */
