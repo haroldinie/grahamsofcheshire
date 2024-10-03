@@ -24,7 +24,8 @@ export default function RootLayout({
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={`${inter.className} bg-[#231f20] text-[#EAEAEA]`}>
-
+      {/* <script src="../path/to/flowbite/dist/flowbite.min.js"></script> */}
+      {/* the above is tailwind and flowbite */}
         <div id="container" className="flex flex-col flex-grow">
           <Header />
           <main className="flex-grow">{children}</main> 
