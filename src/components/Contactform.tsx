@@ -1,8 +1,10 @@
+'use client'
+
 export default function Contact() {
     return (
         <>
         <div className="mt-6 px-4 sm:px-6 lg:px-8">
-            <div className="grid sm:grid-cols-2 items-start gap-14 p-8 mx-auto max-w-4xl border rounded-md font-[sans-serif]">
+            <div className="shade grid sm:grid-cols-2 items-start gap-14 p-8 mx-auto max-w-4xl border rounded-md font-[sans-serif]">
                 <div>
                     <h1 className="text-[#EAEAEA] text-3xl font-extrabold">Let's Talk</h1>
                     <p className="text-sm text-[#EAEAEA] mt-4">Need to get in touch? All of our contact information is below or fill in the form and we'll get back to you.</p>

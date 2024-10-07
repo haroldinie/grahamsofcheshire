@@ -1,7 +1,7 @@
 import Contactform from "@/components/Contactform";
 import Image from "next/image";
 import adiebackground from "./unnamed (1).jpg"
-import '../backgroundimages.css';
+import '../aboutUs.css';
 
 
 export default function AboutUs() {
@@ -11,7 +11,7 @@ export default function AboutUs() {
             <div className="">
 
             <div className="shade max-w-screen-xl text-center rounded-lg shadow border-[#7B7B7C] p-6">
-            <h1 className="text-center text-2xl font-bold">About Us</h1>
+            <h1 className="text-center text-5xl font-bold">About Us</h1>
                 <br></br>
                 <p className="text-center">
                 Welcome to Grahams of Cheshire - a bespoke event catering and private dining company located in the heart of Cheshire. As a family-run business, we bring over 20 years of culinary experience to the table, ensuring that every event we cater is a memorable one. 

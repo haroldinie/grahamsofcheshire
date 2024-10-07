@@ -1,9 +1,12 @@
 import Contactform from "@/components/Contactform";
-
+import '../contact.css'
 
 export default function Contact() {
 return (
+    <div className="page-wrapper">
+            <div className="backgroundImage"></div>
     <Contactform/>
+    </div>
 )
 }
 

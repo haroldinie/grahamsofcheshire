@@ -13,7 +13,7 @@ export default function Header() {
   <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
     <Image
       src={grahamslogo}
-      alt="Grahams' logo"
+      alt="Grahams of cheshire logo"
       width={120}
       height={120}
     />
@@ -31,7 +31,7 @@ export default function Header() {
   />
   <label
     htmlFor="navbar-toggle"
-    className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+    className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#EAEAEA] rounded-lg md:hidden hover:bg-[#AD964F] focus:outline-none focus:ring-2 focus:ring-gray-200"
   >
     <svg
       className="w-5 h-5"
@@ -60,16 +60,16 @@ export default function Header() {
         {/* Dropdown menu */}
         <div
           id="dropdownNavbar"
-          className="hidden peer-checked:block z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+          className="hidden peer-checked:block z-10 font-normal divide-y divide-gray-100 rounded-lg shadow w-44 bg-[#AD964F]"
         >
           <ul
-            className="py-2 text-sm text-gray-700 dark:text-gray-400"
+            className="py-2 text-sm text-gray-700"
             aria-labelledby="dropdownLargeButton"
           >
             <li>
               <a
                 href="/about"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-[#AD974F]"
+                className="block px-4 py-2 hover:bg-[#AD964F] hover:text-[#EAEAEA]"
               >
                 About Us
               </a>
@@ -77,7 +77,7 @@ export default function Header() {
             <li>
               <a
                 href="/menus"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-[#AD974F]"
+                className="block px-4 py-2 hover:bg-[#AD964F] hover:text-[#AD974F]"
               >
                 Menus
               </a>
@@ -85,7 +85,7 @@ export default function Header() {
             <li>
               <a
                 href="/gallery"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-[#AD974F]"
+                className="block px-4 py-2 hover:bg-[#AD964F] hover:text-[#AD974F]"
               >
                 Gallery
               </a>
@@ -93,7 +93,7 @@ export default function Header() {
             <li>
               <a
                 href="/reviews"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-[#AD974F]"
+                className="block px-4 py-2 hover:bg-[#AD964F] hover:text-[#AD974F]"
               >
                 Reviews
               </a>
@@ -101,7 +101,7 @@ export default function Header() {
             <li>
               <a
                 href="/contact"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-[#AD974F]"
+                className="block px-4 py-2 hover:bg-gray-600 hover:text-[#AD974F]"
               >
                 Contact Us
               </a>
@@ -114,7 +114,7 @@ export default function Header() {
       <li>
         <a
           href="/about"
-          className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-[#AD974F] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+          className="block py-2 px-3 rounded hover:bg-[#8E793E] md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-[#AD974F] md:dark:hover:bg-transparent"
         >
           About Us
         </a>
@@ -122,7 +122,7 @@ export default function Header() {
       <li>
         <a
           href="/menus"
-          className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-[#AD974F] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+          className="block py-2 px-3 rounded hover:bg-[#8E793E] md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-[#AD974F] md:dark:hover:bg-transparent"
         >
           Menus
         </a>
@@ -130,7 +130,7 @@ export default function Header() {
       <li>
         <a
           href="/gallery"
-          className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-[#AD974F] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+          className="block py-2 px-3 rounded hover:bg-[#8E793E] md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-[#AD974F] md:dark:hover:bg-transparent"
         >
           Gallery
         </a>
@@ -138,7 +138,7 @@ export default function Header() {
       <li>
         <a
           href="/reviews"
-          className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-[#AD974F] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+          className="block py-2 px-3 rounded hover:bg-[#8E793E] md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-[#AD974F] md:dark:hover:bg-transparent"
         >
           Reviews
         </a>
@@ -146,7 +146,7 @@ export default function Header() {
       <li>
         <a
           href="/contact"
-          className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-[#AD974F] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+          className="block py-2 px-3 rounded hover:bg-[#8E793E] md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-[#AD974F] md:dark:hover:bg-transparent"
         >
           Contact Us
         </a>

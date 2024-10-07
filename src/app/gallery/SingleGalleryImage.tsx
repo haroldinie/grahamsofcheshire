@@ -30,7 +30,7 @@ export const SingleImageComponent : React.FC<SingleImageComponentProps> = ({src,
                     src={src}
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={handleMouseLeave}
-                    alt=""
+                    alt={overlayText}
                 />
             </a>
         </div>

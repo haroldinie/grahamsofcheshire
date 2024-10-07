@@ -6,7 +6,7 @@ export default function Footer() {
       <footer className="footer-center bg-primary text-primary-content pt-10 px-10 mb-5 mt-10 border-t-[5px] border-[#8E793E] bg-[#231f20] text-[#EAEAEA]">
       <div className="flex flex-col md:flex-row items-start justify-between">
         <div className="flex flex-col md:flex-row items-center">
-          <Image src={grahamslogo} alt="Graham's logo" width={120} height={120} />
+          <Image src={grahamslogo} alt="Graham's of cheshire logo" width={120} height={120} />
           <aside className="ml-0 md:ml-4 mt-4 md:mt-0">
             <p className="font-bold text-center md:text-left">
               Graham's of Cheshire Ltd.

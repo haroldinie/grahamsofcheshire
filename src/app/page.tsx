@@ -1,33 +1,34 @@
 'use client'
 import Link from "next/link";
 import Image from "next/image";
-import image5 from "../../public/logo/images/unnamed (5).jpg";
+import image5 from "../../public/logo/images/unnamed (2).jpg";
 import image6 from "../../public/logo/images/unnamed (6).jpg";
 import image7 from "../../public/logo/images/unnamed (7).jpg";
-import image8 from "../../public/logo/images/unnamed (8).jpg";
-import image9 from "../../public/logo/images/unnamed (9).jpg";
+import image8 from "../../public/logo/images/unnamed (3).jpg";
+import image9 from "../../public/logo/images/unnamed (11).jpg";
 
 export default function Home() {
   return ( 
     <>
     <div className="max-w-full flex flex-wrap items-center justify-between text-[#EAEAEA] text-center">
-        <div className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4 text-[#EAEAEA] text-center">
-    <h1>Welcome to Grahams of Cheshire - a bespoke event catering and private dining company located in the heart of Cheshire. As a family-run business, we bring over 20 years of culinary experience to the table, ensuring that every event we cater is a memorable one.
-    </h1>
+        <div className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4 text-[#EAEAEA] text-center text-l">
+    <h1 className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4 text-[#EAEAEA] text-center text-4xl font-bold">Welcome to Graham's of Cheshire</h1>
+        <br></br><br></br><p>A bespoke event catering and private dining company located in the heart of Cheshire. As a family-run business, we bring over 20 years of culinary experience to the table, ensuring that every event we cater is a memorable one.</p>
+    
     </div>
   <div className="grid gap-4 pt-4 px-4">
     <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
         <div>
-            <Image className="h-auto w-auto max-w-full rounded-lg" src={image5} alt=""/>
+            <Image className="h-auto w-auto max-w-full rounded-lg" src={image5} alt="Glazed lemon tart, strawberries, chantilly cream"/>
         </div>
         <div>
-            <Image className="h-auto w-auto max-w-full rounded-lg" src={image6} alt=""/>
+            <Image className="h-auto w-auto max-w-full rounded-lg" src={image6} alt="Tuna Ceviche - tiger milk, cracker bread & crispy salmon skin"/>
         </div>
         <div>
-            <Image className="h-auto w-auto max-w-full rounded-lg" src={image7} alt=""/>
+            <Image className="h-auto w-auto max-w-full rounded-lg" src={image7} alt="Canapés - roast baby heritage carrot and crispy chicken skin with ricotta and red pepper caviar"/>
         </div>
         <div>
-            <Image className="h-auto w-auto max-w-full rounded-lg" src={image8} alt=""/>
+            <Image className="h-auto w-auto max-w-full rounded-lg" src={image8} alt="Canapés - beetroot and gin cured salmon on cracker bread"/>
         </div>
 
 
@@ -41,6 +42,49 @@ export default function Home() {
 </div>
 
 <div id="upcoming-events-wrapper" className="p-6 flex justify-center items-center">
+        <div className="max-w-screen-md w-full">
+
+        <div className="flex items-center justify-between w-full p-5 font-bold rtl:text-right text-[#EAEAEA] border-b-0 rounded-t-xl dark:border-[#EAEAEA] gap-3">
+      <span>Upcoming Events</span>
+    </div>
+          
+          {/* Accordion Item 1 */}
+          <details className="border border-b-0 rounded-t-xl dark:border-[#EAEAEA]">
+            <summary className="p-5 font-medium text-[#EAEAEA] cursor-pointer">
+              Street food taster menu @ Bells of Peover, Cheshire
+            </summary>
+            <div className="p-5 bg-[#8E793E] text-[#EAEAEA]">
+              <p>13th November 2024: for bookings, please call: 01565 7222269</p>
+              {/* <p>More details about the event can be shared here.</p> */}
+            </div>
+          </details>
+
+          {/* Accordion Item 2 */}
+          <details className="border border-gray-200 border-b-0 dark:border-[#EAEAEA]">
+            <summary className="p-5 font-medium text-[#EAEAEA] cursor-pointer">
+              More events coming soon!
+            </summary>
+            {/* <div className="p-5 bg-[#8E793E] text-[#EAEAEA]">
+              <p>Figma details go here.</p>
+              <p>More about Figma usage.</p>
+            </div> */}
+          </details>
+
+          {/* Accordion Item 3 */}
+          <details className="border border-gray-200 dark:border-[#EAEAEA]">
+            <summary className="p-5 font-medium text-[#EAEAEA] cursor-pointer">
+              More events coming soon!
+            </summary>
+            {/* <div className="p-5 bg-[#8E793E] text-[#EAEAEA]">
+              <p>Details about Flowbite and Tailwind UI differences.</p>
+              <p>Additional resources and recommendations.</p>
+            </div> */}
+          </details>
+          
+        </div>
+      </div>
+
+{/* <div id="upcoming-events-wrapper" className="p-6 flex justify-center items-center">
   <div id="accordion-color" className="max-w-screen-md w-full" data-accordion="collapse" data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
 
     <div className="flex items-center justify-between w-full p-5 font-bold rtl:text-right text-[#EAEAEA] border-b-0 rounded-t-xl dark:border-[#EAEAEA] gap-3" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
@@ -98,7 +142,7 @@ export default function Home() {
     </div>
 
   </div>
-</div>
+</div> */}
 
 
 {/* TABLE FOR UPCOMING EVENTS */}
