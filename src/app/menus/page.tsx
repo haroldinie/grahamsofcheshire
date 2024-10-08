@@ -23,17 +23,28 @@ export default function Menus() {
 
                 <div>
                 <div className="flex flex-wrap justify-center content-center text-center">
-                    <a href="/menus/private-dining-menu.pdf" className="block max-w-sm p-6 m-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#8E793E] dark:border-gray-700 dark:hover:bg-[#AD974F]">
+                    <a href="/menus/private-dining-menu.pdf" className="block max-w-sm p-6 m-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#8E793E] dark:border-gray-700 dark:hover:bg-[#AD974F]"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        {/* target blank opens in new tab  and rel noopener improves security by preventing new page from being able to access the window.opener object(prevents phising)*/}
                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Private Dining Menu</h5>
                         <p className="font-normal text-[#EAEAEA]">A sample of our private dining menu, please see gallery for examples</p>
                     </a>
 
-                    <a href="/menus/wedding-breakfast-menu.pdf" className="block max-w-sm p-6 m-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#8E793E] dark:border-gray-700 dark:hover:bg-[#AD974F]">
+                    <a href="/menus/wedding-breakfast-menu.pdf" className="block max-w-sm p-6 m-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#8E793E] dark:border-gray-700 dark:hover:bg-[#AD974F]"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        {/* target blank opens in new tab and rel noopener improves security by preventing new page from being able to access the window.opener object(prevents phising) */}
+
                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Wedding Breakfast Menu</h5>
                         <p className="font-normal text-[#EAEAEA]">A sample of our wedding breakfast menu, please see gallery for examples</p>
                     </a>
 
-                    <a href="/menus/canape-menu.pdf" className="block max-w-sm p-6 m-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#8E793E] dark:border-gray-700 dark:hover:bg-[#AD974F]">
+                    <a href="/menus/canape-menu.pdf" className="block max-w-sm p-6 m-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-[#8E793E] dark:border-gray-700 dark:hover:bg-[#AD974F]"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                       {/* target blank opens in new tab and rel noopener improves security by preventing new page from being able to access the window.opener object(prevents phising)*/}
+
                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Canape Menu</h5>
                         <p className="font-normal text-[#EAEAEA]">A sample of our canape menu, please see gallery for examples</p>
                     </a>
