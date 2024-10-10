@@ -22,6 +22,7 @@ export default function RootLayout({
       <link rel="icon" href="/favicon.ico" sizes="any" />
       {/* the above may need to be removed */}
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="https://www.google.com/recaptcha/api.js"></script>
       </head>
       <body className={`${inter.className} bg-[#231f20] text-[#EAEAEA]`}>
       {/* <script src="../path/to/flowbite/dist/flowbite.min.js"></script> */}

@@ -65,8 +65,7 @@ export default function Home() {
               More events coming soon!
             </summary>
             {/* <div className="p-5 bg-[#8E793E] text-[#EAEAEA]">
-              <p>Figma details go here.</p>
-              <p>More about Figma usage.</p>
+              <p>More details about the event can be shared here.</p>
             </div> */}
           </details>
 
@@ -76,8 +75,7 @@ export default function Home() {
               More events coming soon!
             </summary>
             {/* <div className="p-5 bg-[#8E793E] text-[#EAEAEA]">
-              <p>Details about Flowbite and Tailwind UI differences.</p>
-              <p>Additional resources and recommendations.</p>
+            <p>More details about the event can be shared here.</p>
             </div> */}
           </details>
           
