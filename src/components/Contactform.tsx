@@ -4,6 +4,10 @@ import { FC } from "react";
 import { useForm } from "react-hook-form";
 import { sendEmail } from "@/app/api/email/send-email";
 import { useState } from "react";
+import RecaptchaComponent from "./recaptcha"
+import { useRef } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 export type FormData = {
   name: string;
@@ -11,6 +15,7 @@ export type FormData = {
   phone: string;
   message: string;
 };
+
 
 const Contactform: FC = () => {
   const {
@@ -21,19 +26,28 @@ const Contactform: FC = () => {
   } = useForm<FormData>();
   const [toastVisible, setToastVisible] = useState(false);
   const [toastErrorVisible, setToastErrorVisible] = useState(false);
+  const recaptchaToken = useRef<string | null>(null);
+  const recaptchaRef = useRef<ReCAPTCHA | null>(null); 
 
+  
   async function onSubmit(data: FormData) {
+
+    if (!recaptchaToken.current) {
+      recaptchaRef.current?.execute(); 
+      return; 
+    }
+    const formDataWithRecaptcha = {
+      ...data,
+      recaptchaToken: recaptchaToken.current, 
+    };
     try {
-      const sendEmailRes = await sendEmail(data);
+      const sendEmailRes = await sendEmail(formDataWithRecaptcha);
       if (!sendEmailRes) {
-        // console.log('error', sendEmailRes)
         throw new Error("Email failed to send");
       }
       if (sendEmailRes) {
-        // Show the success toast
         setToastVisible(true);
 
-        // Hide the toast after 3 seconds
         setTimeout(() => {
           setToastVisible(false);
         }, 3000);
@@ -44,6 +58,10 @@ const Contactform: FC = () => {
       setTimeout(() => setToastErrorVisible(false), 3000);
     }
   }
+  const handleRecaptchaVerify = async (token: string | null) => {
+    recaptchaToken.current = token;
+    handleSubmit(onSubmit)();  
+  };
 
   return (
     <>
@@ -59,7 +77,6 @@ const Contactform: FC = () => {
             </p>
 
             <div className="mt-12">
-              {/* <h2 className="text-gray-800 text-base font-bold">Contact details</h2> */}
               <ul className="mt-4">
                 <li className="flex items-center">
                   <div className="bg-[#EAEAEA] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
@@ -105,7 +122,7 @@ const Contactform: FC = () => {
                     </svg>
                   </div>
                   <a
-                    href="tel:+447123456789"
+                    href="tel:+447703699581"
                     className="text-[#EAEAEA] text-sm ml-4"
                   >
                     <small className="block">Phone</small>
@@ -170,7 +187,7 @@ const Contactform: FC = () => {
               placeholder="Email"
               {...register("email", { required: true })}
               className={`w-full text-gray-800 rounded-md px-4 py-2.5 border text-sm ${
-                errors.phone
+                errors.email
                   ? "border-red-500 outline-red-500"
                   : "border-gray-300"
               }`}
@@ -188,11 +205,13 @@ const Contactform: FC = () => {
               rows={6}
               className={`w-full text-gray-800 rounded-md px-4 py-2.5 border text-sm ${
                 errors.message
-                  ? "border-red-500 outline-red-500 "
-                  : "border-gray-300"
+                ? "border-red-500 outline-red-500 "
+                : "border-gray-300"
               }`}
             />
             {errors.message && <span>This field is required</span>}
+            <RecaptchaComponent onVerify={handleRecaptchaVerify} ref={recaptchaRef} />
+
             <button
               type="submit"
               className="w-full py-2.5 px-6 bg-[#AD974F] text-white rounded-md font-semibold shadow-md hover:bg-[#DAA520]"
@@ -257,9 +276,11 @@ const Contactform: FC = () => {
             type="button"
             className="ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-400 inline-flex items-center justify-center h-8 w-8"
             data-dismiss-target="#toast-danger"
-            aria-label="Close"
+            aria-label="Close" 
+
             onClick={() => setToastErrorVisible(false)} // Close button logic
           >
+            
             <span className="sr-only">Close</span>
             <svg
               className="w-3 h-3"
