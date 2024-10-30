@@ -1,13 +1,18 @@
-'use client'
+
 import Link from "next/link";
+import supabase from "../supabaseClient"
 import Image from "next/image";
 import image5 from "../../public/logo/images/unnamed (2).jpg";
 import image6 from "../../public/logo/images/unnamed (6).jpg";
 import image7 from "../../public/logo/images/unnamed (7).jpg";
 import image8 from "../../public/logo/images/unnamed (3).jpg";
 import image9 from "../../public/logo/images/unnamed (11).jpg";
+import UpcomingEvents from "@/components/UpcomingEvents";
 
 export default function Home() {
+
+  // console.log(supabase)
+
   return ( 
     <>
     <div className="max-w-full flex flex-wrap items-center justify-between text-[#EAEAEA] text-center">
@@ -30,8 +35,6 @@ export default function Home() {
         <div>
             <Image className="h-auto w-auto max-w-full rounded-lg" src={image8} alt="Canapés - beetroot and gin cured salmon on cracker bread"/>
         </div>
-
-
         <div>
             <div className="hidden md:block">
             <Image className="h-auto w-auto max-w-full rounded-lg" src={image9} alt=""/>
@@ -41,46 +44,7 @@ export default function Home() {
 </div>
 </div>
 
-<div id="upcoming-events-wrapper" className="p-6 flex justify-center items-center">
-        <div className="max-w-screen-md w-full">
-
-        <div className="flex items-center justify-between w-full p-5 font-bold rtl:text-right text-[#EAEAEA] border-b-0 rounded-t-xl dark:border-[#EAEAEA] gap-3">
-      <span>Upcoming Events</span>
-    </div>
-          
-          {/* Accordion Item 1 */}
-          <details className="border border-b-0 rounded-t-xl dark:border-[#EAEAEA]">
-            <summary className="p-5 font-medium text-[#EAEAEA] cursor-pointer">
-              Street food taster menu @ Bells of Peover, Cheshire
-            </summary>
-            <div className="p-5 bg-[#8E793E] text-[#EAEAEA]">
-              <p>13th November 2024: for bookings, please call: 01565 7222269</p>
-              {/* <p>More details about the event can be shared here.</p> */}
-            </div>
-          </details>
-
-          {/* Accordion Item 2 */}
-          <details className="border border-gray-200 border-b-0 dark:border-[#EAEAEA]">
-            <summary className="p-5 font-medium text-[#EAEAEA] cursor-pointer">
-              More events coming soon!
-            </summary>
-            {/* <div className="p-5 bg-[#8E793E] text-[#EAEAEA]">
-              <p>More details about the event can be shared here.</p>
-            </div> */}
-          </details>
-
-          {/* Accordion Item 3 */}
-          <details className="border border-gray-200 dark:border-[#EAEAEA]">
-            <summary className="p-5 font-medium text-[#EAEAEA] cursor-pointer">
-              More events coming soon!
-            </summary>
-            {/* <div className="p-5 bg-[#8E793E] text-[#EAEAEA]">
-            <p>More details about the event can be shared here.</p>
-            </div> */}
-          </details>
-          
-        </div>
-      </div>
+<UpcomingEvents/>
 
 {/* <div id="upcoming-events-wrapper" className="p-6 flex justify-center items-center">
   <div id="accordion-color" className="max-w-screen-md w-full" data-accordion="collapse" data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">

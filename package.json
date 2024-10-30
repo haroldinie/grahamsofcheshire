@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@prisma/client": "^5.19.1",
+    "@supabase/supabase-js": "^2.45.4",
     "@types/nodemailer": "^6.4.16",
+    "@vercel/blob": "^0.25.1",
     "flowbite": "^2.5.1",
     "next": "14.2.9",
     "nodemailer": "^6.9.15",

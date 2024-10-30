@@ -1,63 +1,91 @@
 import "../reviewsbackgroundimage.css";
+import supabase from "@/supabaseClient";
 
-export default function Reviews() {
-  return (
-    <>
-      <div className="page-wrapper">
-        <div className="backgroundImage"> </div>
-        
-          <div className="flex justify-between flex-wrap p-4 gap-4">
-            {/* inserting container above makes a change */}
-            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
-                "Adie did a fantastic job catering for our parents' golden wedding anniversary dinner. Great communication beforehand, finessing the menu to our specifications and arrived with plenty of time and also plenty of amazing leftovers...including a sublime jus to go with the perfect beef wellingtons. Declared by all to be an amazing meal!"
-              </h5>
-            </div>
-            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
-                "At last we have Adie back in the fold head chef at The Bells of Peover with his creatively executed delicious new menu. Friends and family were invited for a new menu tester night on Thursday, I had the tasty prawns and succulent lamb 😋 but don’t take my word for it get yourselves down there the food is just devine amazing presentation great ambiance."
-              </h5>
-            </div>
+export default async function Reviews() {
 
-            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
-                "Fantastic evening. Great customer service from the staff and even spoke with the chef who was very friendly. We shared the breads over drinks and then had the home made pies (both steak and ale, and cheese and onion) for mains, and they were absolutely stunning.  Great experience will be back."
-              </h5>
-            </div>
+  const { data: reviews, error } = await supabase
+  .from('reviews')
+  .select('review_body');
 
-            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
-                "5 stars, the triumphant return of Chef Adrian Munt! We returned to The Bells this week with family, and we’re delighted with our experience. After a few months of The Bells not being up to its usual standard, our meal and experience on Thursday evening was brilliant."
-              </h5>
-            </div>
+if (error) {
+  console.error('Error fetching reviews:', error);
+  return <p>Failed to load reviews.</p>;
+}
 
-            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
-                "Came in a big group of friends and opted for the trio of meat. Head chef has nailed it. The absolute without doubt best plate of food I’ve ever eaten. Head chef is called Adie and came and chatted with us too. Can't describe the level of deservedness for recognition of food excellence. Desserts were also top tier"
-              </h5>
-            </div>
-
-            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
-                "Had the trio roast and it was absolutely sensational. Best roast dinner I’ve ever had and I highly recommend getting the cauliflower cheese as well! Elite level cuisine."
-              </h5>
-            </div>
-
-
-            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
-                "This really is a masterpiece by The Bells of Peover's talented head chef, Adie Munt. I am not usually a big fan of ordering pork when dining out, but this dish changed that for sure. Pork tenderloin, expertly paired with a rich and flavourful black pudding suet pudding and a pancetta jus on the side, is accompanied by a luscious whole grain mash that offers a comforting texture, and crisp and vibrant tender stem broccoli."
-              </h5>
-            </div>
-
-            <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
-              <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
-                "What can I say, I've been a fan of Chef Adie's creations for a long time now and that's why I didn't think twice when it came to choosing who I'd like to cater for our wedding. The food speaks for itself and I cannot thank you enough for delivering on the quality, as you always do, but esecially on our wedding day!"
-              </h5>
-            </div>
-
+return (
+  
+  <div className="page-wrapper">
+    <div className="backgroundImage"> </div>
+    
+    <div className="flex justify-between flex-wrap p-4 gap-4">
+      {reviews?.map((review, index) => (
+        <div key={index} className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
+          <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+            {review.review_body}
+          </h5>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+    );
+    }
+
+    // <>
+    //   <div className="page-wrapper">
+    //     <div className="backgroundImage"> </div>
+        
+    //       <div className="flex justify-between flex-wrap p-4 gap-4">
+    //         {/* inserting container above makes a change */}
+    //         <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
+    //           <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+    //             "Adie did a fantastic job catering for our parents' golden wedding anniversary dinner. Great communication beforehand, finessing the menu to our specifications and arrived with plenty of time and also plenty of amazing leftovers...including a sublime jus to go with the perfect beef wellingtons. Declared by all to be an amazing meal!"
+    //           </h5>
+    //         </div>
+    //         <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
+    //           <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+    //             "At last we have Adie back in the fold head chef at The Bells of Peover with his creatively executed delicious new menu. Friends and family were invited for a new menu tester night on Thursday, I had the tasty prawns and succulent lamb 😋 but don’t take my word for it get yourselves down there the food is just devine amazing presentation great ambiance."
+    //           </h5>
+    //         </div>
+
+    //         <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
+    //           <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+    //             "Fantastic evening. Great customer service from the staff and even spoke with the chef who was very friendly. We shared the breads over drinks and then had the home made pies (both steak and ale, and cheese and onion) for mains, and they were absolutely stunning.  Great experience will be back."
+    //           </h5>
+    //         </div>
+
+    //         <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
+    //           <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+    //             "5 stars, the triumphant return of Chef Adrian Munt! We returned to The Bells this week with family, and we’re delighted with our experience. After a few months of The Bells not being up to its usual standard, our meal and experience on Thursday evening was brilliant."
+    //           </h5>
+    //         </div>
+
+    //         <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
+    //           <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+    //             "Came in a big group of friends and opted for the trio of meat. Head chef has nailed it. The absolute without doubt best plate of food I’ve ever eaten. Head chef is called Adie and came and chatted with us too. Can't describe the level of deservedness for recognition of food excellence. Desserts were also top tier"
+    //           </h5>
+    //         </div>
+
+    //         <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
+    //           <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+    //             "Had the trio roast and it was absolutely sensational. Best roast dinner I’ve ever had and I highly recommend getting the cauliflower cheese as well! Elite level cuisine."
+    //           </h5>
+    //         </div>
+
+
+    //         <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
+    //           <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+    //             "This really is a masterpiece by The Bells of Peover's talented head chef, Adie Munt. I am not usually a big fan of ordering pork when dining out, but this dish changed that for sure. Pork tenderloin, expertly paired with a rich and flavourful black pudding suet pudding and a pancetta jus on the side, is accompanied by a luscious whole grain mash that offers a comforting texture, and crisp and vibrant tender stem broccoli."
+    //           </h5>
+    //         </div>
+
+    //         <div className="shade block max-w-sm p-6 rounded-lg shadow border-[#7B7B7C]">
+    //           <h5 className="mb-2 md:text-l font-semibold tracking-tight text-[#EAEAEA]">
+    //             "What can I say, I've been a fan of Chef Adie's creations for a long time now and that's why I didn't think twice when it came to choosing who I'd like to cater for our wedding. The food speaks for itself and I cannot thank you enough for delivering on the quality, as you always do, but esecially on our wedding day!"
+    //           </h5>
+    //         </div>
+
+    //     </div>
+    //   </div>
 
       {/* <div className="grid mb-8 mt-8 border border-[#7B7B7C] rounded-lg shadow-sm dark:border-[#7B7B7C] md:mb-12 md:grid-cols-2">
 if want to add a border around the outside just add "border" above
@@ -171,6 +199,4 @@ if want to add a border around the outside just add "border" above
         </figcaption>    
     </figure>
 </div> */}
-    </>
-  );
-}
+    
