@@ -5,7 +5,7 @@ export default async function Reviews() {
 
   const { data: reviews, error } = await supabase
   .from('reviews')
-  .select('review_body');
+  .select('*');
 
 if (error) {
   console.error('Error fetching reviews:', error);

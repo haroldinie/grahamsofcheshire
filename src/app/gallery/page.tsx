@@ -53,7 +53,7 @@ export default function Gallery() {
                         <Image className="h-auto w-auto max-w-full rounded-lg" 
                         src={image.file_path} 
                         alt=""    
-                        layout="intrinsic" // This allows the image to fill its parent container
+                        // layout="intrinsic" // This allows the image to fill its parent container
                         width={1000}
                         height={1000}
                          />

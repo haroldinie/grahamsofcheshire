@@ -11,7 +11,6 @@ export default function Footer() {
             <p className="font-bold text-center md:text-left">
               Graham's of Cheshire Ltd.
               <br />
-              Providing the best possible scran since 2024
             </p>
             <p className="text-center md:text-left">
               Copyright © {new Date().getFullYear()} - All rights reserved

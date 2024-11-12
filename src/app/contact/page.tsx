@@ -1,7 +1,7 @@
 // import ContactformTwo from "@/components/ContactFormTwo";
 import Contactform from '@/components/Contactform';
 import '../contact.css'
-import ContactFormTwo from "@/components/ContactFormTwo";
+// import ContactFormTwo from "@/components/ContactFormTwo";
 
 export default function Contact() {
 return (
