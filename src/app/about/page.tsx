@@ -1,6 +1,4 @@
 import Contactform from "@/components/Contactform";
-import Image from "next/image";
-import adiebackground from "./unnamed (1).jpg"
 import '../aboutUs.css';
 
 
@@ -17,10 +15,12 @@ export default function AboutUs() {
                 Welcome to Grahams of Cheshire - a bespoke event catering and private dining company located in the heart of Cheshire. As a family-run business, we bring over 20 years of culinary experience to the table, ensuring that every event we cater is a memorable one. 
                 <br></br>
                 <br></br>
+                  {/* eslint-disable-next-line react/no-unescaped-entities */}
                 Founded by Adrian, a seasoned expert in the catering industry, Grahams of Cheshire is committed to delivering exceptional food quality tailored to the unique needs of each client. Whether you're hosting an intimate private dinner or a large-scale event, our team provides personalized menus that blend creativity, fresh ingredients, and culinary excellence. 
                 <br></br>
                 <br></br>
-                At Grahams of Cheshire, we believe in making every occasion special, with a focus on meticulous service and extraordinary flavors. Let us help you create an unforgettable experience with food that delights the senses.  
+                  {/* eslint-disable-next-line react/no-unescaped-entities */}
+                At Graham's of Cheshire, we believe in making every occasion special, with a focus on meticulous service and extraordinary flavors. Let us help you create an unforgettable experience with food that delights the senses.  
                 </p>    
 
 

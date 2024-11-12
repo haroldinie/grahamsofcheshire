@@ -69,10 +69,12 @@ const Contactform: FC = () => {
         <div className="shade grid sm:grid-cols-2 items-start gap-14 p-8 mx-auto max-w-4xl border rounded-md font-[sans-serif]">
           <div>
             <h1 className="text-[#EAEAEA] text-3xl font-extrabold">
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
               Let's Talk
             </h1>
             <p className="text-sm text-[#EAEAEA] mt-4">
               Need to get in touch? All of our contact information is below or
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
               fill in the form and we'll get back to you.
             </p>
 

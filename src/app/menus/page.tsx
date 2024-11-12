@@ -11,12 +11,15 @@ export default function Menus() {
             <h1 className="text-center text-5xl font-bold">Menus </h1>
             <br></br>
             <p className="text-center pb-10">
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
               At Graham's of Cheshire, our curated menus are crafted to suit all
               occasions, from grand weddings to intimate private dining
               experiences. Each menu reflects our commitment to bespoke,
               high-end catering, ensuring that every dish is tailored to your
               tastes and preferences. <br></br>
-              <br></br>Whether you're looking for a formal sit-down meal, an
+              <br></br>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
+              Whether you're looking for a formal sit-down meal, an
               elegant sharing-style feast, or a unique taster menu, our culinary
               creations offer a refined, personalized touch to make your event
               truly unforgettable. Explore our menus and let us help you create

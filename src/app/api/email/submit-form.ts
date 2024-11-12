@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  const { name, email, phone, message, recaptchaToken } = req.body;
+  const { recaptchaToken } = req.body;
 
   if (!recaptchaToken) {
     return res.status(400).json({ error: "reCAPTCHA token is missing" });

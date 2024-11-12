@@ -6,7 +6,6 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import supabase from '@/supabaseClient';
 import LogoutButton from '@/components/logout';
-import { AuthTokenResponsePassword, User } from '@supabase/supabase-js';
 
 export default function Login() {
   const [email, setEmail] = useState('');

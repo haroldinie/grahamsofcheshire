@@ -12,7 +12,7 @@ type ImageType = {
 
 export default function Gallery() {
     const [images, setImages] = useState<ImageType[]>([]);
-    const [error, setError] = useState<string | null>(null);
+    const [error] = useState<string | null>(null);
 
     useEffect(() => {
         const fetchImages = async () => {

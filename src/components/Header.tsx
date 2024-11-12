@@ -1,8 +1,4 @@
-import Link from "next/link"
 import Image from "next/image";
-import { Collapse } from 'flowbite';
-import type { CollapseOptions, CollapseInterface } from 'flowbite';
-import type { InstanceOptions } from 'flowbite';
 import grahamslogo from './transparent-logo.png'
 
 export default function Header() {
@@ -18,6 +14,7 @@ export default function Header() {
       height={120}
     />
     <h2 className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white hidden sm:flex">
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
       Graham's of Cheshire
     </h2>
   </a>

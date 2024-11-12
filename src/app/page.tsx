@@ -7,10 +7,10 @@ import image8 from "../../public/logo/images/unnamed (3).jpg";
 import image9 from "../../public/logo/images/unnamed (11).webp";
 import UpcomingEvents from "@/components/UpcomingEvents";
 
-type EventType = {
-  title: string;
-  description: string;
-};
+// type EventType = {
+//   title: string;
+//   description: string;
+// };
 
 export default async function Home() {
   const { data: events, error } = await supabase
@@ -27,6 +27,7 @@ export default async function Home() {
       <div className="max-w-full flex flex-wrap items-center justify-between text-[#EAEAEA] text-center">
         <div className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4 text-[#EAEAEA] text-center text-l">
           <h1 className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4 text-[#EAEAEA] text-center text-4xl font-bold">
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
             Welcome to Graham's of Cheshire
           </h1>
           <br />

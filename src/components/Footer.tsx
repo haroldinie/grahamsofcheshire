@@ -9,6 +9,7 @@ export default function Footer() {
           <Image src={grahamslogo} alt="Graham's of cheshire logo" width={120} height={120} />
           <aside className="ml-0 md:ml-4 mt-4 md:mt-0">
             <p className="font-bold text-center md:text-left">
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
               Graham's of Cheshire Ltd.
               <br />
             </p>
