@@ -73,9 +73,8 @@ const Contactform: FC = () => {
               Let's Talk
             </h1>
             <p className="text-sm text-[#EAEAEA] mt-4">
-              Need to get in touch? All of our contact information is below or
                 {/* eslint-disable-next-line react/no-unescaped-entities */} 
-               fill in the form and we'll get back to you.
+              Need to get in touch? All of our contact information is below or fill in the form and we'll get back to you.
             </p>
 
             <div className="mt-12">
