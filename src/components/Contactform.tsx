@@ -123,11 +123,11 @@ const Contactform: FC = () => {
                     </svg>
                   </div>
                   <a
-                    href="tel:+447703699581"
+                    href="tel:+441565325025"
                     className="text-[#EAEAEA] text-sm ml-4"
                   >
                     <small className="block">Phone</small>
-                    <strong>07703 699581</strong>
+                    <strong>01565 325025</strong>
                   </a>
                 </li>
               </ul>
