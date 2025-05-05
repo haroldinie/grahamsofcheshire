@@ -1,9 +1,9 @@
 import "../reviewsbackgroundimage.css";
-import supabase from "@/supabaseClient";
+import { supabaseServer } from "@/supabaseServer";
 
 export default async function Reviews() {
 
-  const { data: reviews, error } = await supabase
+  const { data: reviews, error } = await supabaseServer
   .from('reviews')
   .select('*');
 
